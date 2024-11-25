@@ -1,0 +1,66 @@
+/* .section-container{
+    background-color: var(--btn-color);
+    padding: 10px;
+}
+.main-heading-section{
+    font-size: 2rem;
+    text-align: center;
+}
+.container-section{
+    background-color: aquamarine;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    margin: 0px 1rem;
+    padding: 20px;
+}
+.card p{
+    font-size: 15px;
+} */
+
+
+.section-container {
+    background-color: var(--btn-color);
+    padding: 10px;
+}
+
+.main-heading-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Center cards horizontally */
+}
+
+.card {
+    border: 2.5px solid var(--btn-color);
+    /* background-color: bisque; */
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 1rem); /* Makes each card take up one-third of the container's width */
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 450px; /* Set a minimum height for all cards */
+}
+
+.card p {
+    color: white;
+    font-size: 15px;
+    margin: 5px 0;
+}
+.card-details h2{
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}

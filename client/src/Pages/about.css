@@ -1,0 +1,17 @@
+
+.abt-left{
+    max-width: 50vw;
+}
+.abt-left p {
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.abt-left h2{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.btn{
+    margin-top: 10px;
+}

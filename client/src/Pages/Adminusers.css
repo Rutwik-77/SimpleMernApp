@@ -1,0 +1,111 @@
+.admin-users-section {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: var(--helper-color);
+    background-color: var(--bg-color);
+  }
+  
+  .admin-users-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Table styling */
+  .admin-users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .admin-users th,
+  .admin-users td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid var(--btn-color);
+    color: var(--helper-color);
+  }
+  
+  .admin-users th {
+    background-color: var(--btn-color);
+    color: var(--helper-color);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .admin-users tbody tr:nth-child(even) {
+    background-color: rgba(3, 52, 110, 0.1);
+  }
+  
+  .admin-users tbody tr:nth-child(odd) {
+    background-color: rgba(3, 52, 110, 0.15);
+  }
+  
+  /* Hover effect for rows */
+  .admin-users tbody tr:hover {
+    background-color: var(--dark-color);
+    cursor: pointer;
+    color: var(--bg-color);
+  }
+  
+  /* Styling for edit and delete cells */
+  .admin-users td {
+    text-align: center;
+  }
+  
+  .admin-users td:nth-child(4),
+  .admin-users td:nth-child(5) {
+    color: var(--btn-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .admin-users td:nth-child(4):hover,
+  .admin-users td:nth-child(5):hover {
+    color: var(--helper-color);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .admin-users table,
+    .admin-users th,
+    .admin-users td {
+      display: block;
+      width: 100%;
+    }
+  
+    .admin-users thead {
+      display: none;
+    }
+  
+    .admin-users tbody tr {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid var(--btn-color);
+    }
+  
+    .admin-users td {
+      text-align: left;
+      padding: 8px 10px;
+      color: var(--helper-color);
+    }
+  
+    .admin-users td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 10px;
+      color: var(--dark-color);
+    }
+  }

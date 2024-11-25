@@ -1,0 +1,79 @@
+/** @format */
+
+.edit-user-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--bg-color); /* Use background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading */
+.edit-user-container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--dark-color); /* Light blue for the heading */
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Label styling */
+.edit-user-container label {
+  display: block;
+  font-weight: 500;
+  color: var(--helper-color); /* Pale yellow for labels */
+  margin-bottom: 0.5rem;
+}
+
+/* Input fields */
+.edit-user-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--dark-color); /* Light blue border */
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff; /* White text for contrast */
+  background-color: var(--btn-color); /* Navy blue background for input */
+  transition: border-color 0.3s;
+}
+
+.edit-user-container input:focus {
+  border-color: var(--dark-color); /* Light blue on focus */
+  outline: none;
+  box-shadow: 0 0 4px rgba(110, 172, 218, 0.5); /* Soft light blue shadow */
+}
+
+/* Button styling */
+.edit-user-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--btn-color); /* Navy blue */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-user-container button:hover {
+  background-color: var(--dark-color); /* Light blue on hover */
+}
+
+/* Spacing for form elements */
+.edit-user-container label + input {
+  margin-bottom: 1.2rem;
+}
+
+/* Additional spacing for mobile */
+@media (max-width: 768px) {
+  .edit-user-container {
+    padding: 1.5rem;
+  }
+  .edit-user-container h1 {
+    font-size: 1.5rem;
+  }
+}

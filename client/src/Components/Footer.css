@@ -1,0 +1,12 @@
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98.5vw;
+    text-align: center;
+    color: black;
+    background-color: var(--btn-color);
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    height: 3rem;
+}

@@ -1,0 +1,80 @@
+/** AdminContacts.css **/
+
+.admin-contact-section {
+    padding: 2rem;
+    background-color: var(--bg-color); /* dark blue */
+    color: var(--dark-color); /* light blue */
+  }
+  
+  .container-contact h1 {
+    font-size: 2rem;
+    color: var(--helper-color); /* pale yellow */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .container.admin-contact {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-color); /* dark blue */
+    color: var(--helper-color); /* pale yellow */
+  }
+  
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid var(--btn-color); /* navy blue */
+  }
+  
+  th {
+    background-color: var(--btn-color); /* navy blue */
+    color: var(--helper-color); /* pale yellow */
+  }
+  
+  td {
+    background-color: var(--bg-color); /* dark blue */
+    color: var(--dark-color); /* light blue */
+  }
+  
+  a {
+    color: var(--dark-color); /* light blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: var(--helper-color); /* pale yellow */
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: var(--btn-color); /* navy blue */
+    color: var(--helper-color); /* pale yellow */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: var(--dark-color); /* light blue */
+    color: var(--bg-color); /* dark blue */
+  }
+  
+  @media (max-width: 768px) {
+    .container-contact h1 {
+      font-size: 1.5rem;
+    }
+    
+    th,
+    td {
+      padding: 0.5rem;
+    }
+  }
+  
